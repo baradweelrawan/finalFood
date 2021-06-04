@@ -87,6 +87,5 @@ function render(){
         pEl.textContent=`Food Price:${getRandom()}`;
     }
 }   
-
-  
+ 
 gettingItems();
