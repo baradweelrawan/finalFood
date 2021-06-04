@@ -17,15 +17,6 @@ function Foodslover(customerName,foodType){
 
 myForm.addEventListener('submit',handleSubmit);
 
-function handleSubmit(event){
-    event.preventDefault();
-    let customerName=event.target.customerName.value;
-    let foodType=event.target.foodType.value;
-    new Foodslover(customerName,foodType);
-
-    settingItems();
-    render();
-}
 
 
 function getRandom() {
@@ -49,7 +40,7 @@ function getRandom() {
         foods = normalObj ;
   }
   console.log(foods);
-  render();
+//   render();
   
   
 }
@@ -57,7 +48,7 @@ function getRandom() {
 function render(){
     let tableEl=document.createElement('table');
     table.appendChild(tableEl);
-
+    
     for (let i =0 ; i<foods.length ; i++){
         tableEl.textContent='';
 
@@ -84,8 +75,19 @@ function render(){
 
         let p2El=document.createElement('p');
         td1El.appendChild(p2El);
-        pEl.textContent=`Food Price:${getRandom()}`;
+        p2El.textContent=`Food Price:${getRandom()}`;
     }
-}   
+} 
+
+
+function handleSubmit(event){
+    event.preventDefault();
+    let customerName=event.target.customerName.value;
+    let foodType=event.target.foodType.value;
+    new Foodslover(customerName,foodType);
+
+    settingItems();
+    render();
+}
  
 gettingItems();

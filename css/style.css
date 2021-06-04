@@ -1,10 +1,12 @@
 *{
     box-sizing: border-box;
 }
+
 header{
     background-color: rgba(255, 229, 72, 255);
-    height: 100px;
+       
 }
+
 h1{
     font-family: 'Fredoka One', cursive;
     color: red;
@@ -12,15 +14,18 @@ h1{
     font-size: 40px;
     font-weight: lighter;
     padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 header img{
-    top: 2px;
-    left: 30px;
+    width: 100%;
     position: absolute;
-    width: 120px;
-    height: 100px;
+    padding-top:-1px;
+    
 }
+
+
+
 #main{
     top: 50px;
     position: absolute;
@@ -37,7 +42,7 @@ form{
     height: 300px;
     border-radius: 30px;
 }
-form label{
+form fieldset label{
     top: 50px;
     position: relative;
     padding-left: 80px;
@@ -45,14 +50,46 @@ form label{
     color: red;
     font-family: 'Fredoka One', cursive;
 }
-form input{
+form fieldset label:last-child{
+    top: 90px;
+    position: absolute;
+    padding-left: 80px;
+    font-size: 20px;
+    color: red;
+    font-family: 'Fredoka One', cursive;
+    padding-top: 100px;
+    
+}
+
+
+form fieldset input{
     top: 50px;
     position: relative;
     margin-left: 60px;
     width: 200px;
     height: 25px;
     border-radius: 10px;
+    margin-top: 20px;
 }
+
+
+
+form fieldset select{
+    top: 70px;
+    position: relative;
+    margin-left: 60px;
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+form fieldset input:last-child{
+    background-color: red;
+    color: wheat;
+    font-family: 'Fredoka One', cursive;
+}
+
 form select{
     top: 50px;
     position: relative;
@@ -62,17 +99,15 @@ form select{
     border-radius: 10px;
     margin-bottom: 30px;
 }
-form input:last-of-type{
-    background-color: red;
-    color: wheat;
-    font-family: 'Fredoka One', cursive;
-}
+
+
+
 table{
     background-color: rgba(255, 229, 72, 255) ;
     top: -300px;
     position: relative;
     margin-left: 700px;
-    width: 500px;
+    width: 100px;
     /* border-radius: 10px; */
     
 }
@@ -108,9 +143,13 @@ table p{
 footer{
     background-color: rgba(255, 229, 72, 255);
     height: 50px;
-    margin-top: 200px;
-    padding-top: 20px;
+    margin-top: -300px;
+    padding-top:70px;
     text-align: center;
     font-family: 'Fredoka One', cursive;
     color: red;
+}
+
+footer p{
+    margin-top: -30px;
 }
