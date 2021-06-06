@@ -103,47 +103,69 @@ form select{
 
 
 table{
-    background-color: rgba(255, 229, 72, 255) ;
-    top: -300px;
+    background-color:  rgba(255, 229, 72, 255);
+    top: -250px;
     position: relative;
     margin-left: 700px;
-    width: 100px;
-    /* border-radius: 10px; */
+    padding-top: 20px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 150px;
+    border: 1px solid red;
+    
+    
     
 }
-table th{
+ table tr th{
 
     margin-top: 20px;
     margin-left: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border: 1px solid red;
     font-size: 20px;
     text-align: center;
+    width:250px;
+
 
 }
-table td{
+table tr td {  
+    border: 1px solid #ddd;
+    text-align: left;
+    
+}
+
+table td img{
+    display: inline-block;
+    margin-top: 270px;
+    margin-left: -670px;
+    width: 200px;
+    height: 150px;
+    z-index: 1;
+
+} 
+
+table td p{
+    color: black;
+    font-family: 'Fredoka One', cursive;
+    margin-top: 10px;
+    margin-left: -500px;
+    text-align: left;
+}  
+ /* table tr td{
     
     border: 1px solid red;
     padding-bottom: 350px;
     background-color: rgb(238, 236, 238);
-}
-table img{
-    width: 90px;
-    height: 90px;
-    z-index: 1;
-    margin-top: 30px;
-    margin-left: 30px;
+} */
+ 
 
-}
-table p{
-    color: black;
-    font-family: 'Fredoka One', cursive;
-    margin-top:20px;
-    margin-left: 20px;
-}
-footer{
+ footer{
     background-color: rgba(255, 229, 72, 255);
     height: 50px;
-    margin-top: -300px;
+    margin-top: 75px;
     padding-top:70px;
     text-align: center;
     font-family: 'Fredoka One', cursive;
@@ -152,4 +174,4 @@ footer{
 
 footer p{
     margin-top: -30px;
-}
+} 
